@@ -109,5 +109,5 @@ final.mean <- dcast(final.melted, subject + activity ~ variable, mean)
 write.table(final.mean, file=file.path("tidy.txt"), row.names = FALSE, quote = FALSE)
 
 library(knitr)
-knit2html("codebook.md");
+knit2html("codebook.md")
 
